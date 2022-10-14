@@ -1,24 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Maryam Mirzakhani
+</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+   
+
   </head>
   <body>
-    <header class="header">
-      <h1>css flexbox photo gallery</h1>
-    </header>
-    <div class="gallery">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg">
-    </div>
+    
+    <main id="main">
+        <h1 id="title">Dr. Maryam Mirzakhani</h1>
+      <div id="img-div">
+        <p id="tribute-info">Maryam Mirzakhani was an Iranian mathematician and a professor of mathematics at Stanford University.</p>
+        <img id="image" src="https://cdn.zoomg.ir/2021/5/maryam-mirzakhani.jpg">
+      <div id="img-caption">Images courtesy of Maryam Mirzakhani
+      </div>
+      </div>
+<h2>Here's a time line of Maryam Mirzakhani life:</h2>
+
+<ul>
+    <li> <b>1977</b>   Born in Tehran, Iran</li>
+
+    <li> <b>2005</b>   As a result of her research, she was honored in Popular Science's fourth annual "Brilliant 10" in which she was acknowledged as one of the top 10 young minds who have pushed their fields in innovative directions. </li>
+
+    <li> <b>2014</b>   Mirzakhani was honored with the Fields Medal, the most prestigious award in mathematics, becoming the first Iranian to be honored with the award and the first of only two women to date.  </li>
+ 
+    <li> <b>2017</b>   Mirzakhani died of breast cancer at the age of 40.</li>
+</ul>
+<br>
+<p class="bold" id="more">If you have time, you should read more about this incredible human being on his
+    <a target="_blank" id="tribute-link" href="https://en.wikipedia.org/wiki/Maryam_Mirzakhani">Wikipedia entry.</a>
+</p>
+<br>
+<div class="divider"></div>
+<br><br>
+<script type="text/javascript">
+  writeRandomQuote = function () {
+    var quotes = new Array();
+    quotes[0] = "Action is the real measure of intelligence.";
+    quotes[1] = "If life were predictable it would cease to be life, and be without flavor.";
+    quotes[2] = "Every goal, every action, every thought, every feeling one experiences, whether it be consciously or unconsciously known, is an attempt to increase one's level of peace of mind.";
+    quotes[3] = "Life is what happens when you're busy making other plans.";
+    var rand = Math.floor(Math.random()*quotes.length);
+    document.write(quotes[rand]);
+  }
+  writeRandomQuote();
+</script>
+
+Body:
+
+<script type="text/javascript">writeRandomQuote();</script>
+    </main>
+   
   </body>
+  </html>
